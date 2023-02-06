@@ -18,7 +18,7 @@ def snowflake(t, lengthSide, levels):
 
 
 t = turtle.Turtle()
-t.color("#6AA5E1", "#6AA5E1") # ONLY CHANGE THESE (outline, fill)
+t.color("light_blue", "light_blue") # ONLY CHANGE THESE (outline, fill)
   
 t.speed(9999)                    
 length = 300.0
