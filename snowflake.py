@@ -1,6 +1,12 @@
 import turtle
 
-turtle.title("Snuffeldag Februari 2023 - Sneeuwvlok")
+turtle.title("Snuffeldag Februari 2023 - Sneeuwvlokje")
+turtle.bgcolor("#6f9c00")
+
+kleurUitlijning = "lightblue"
+kleurVulling = "aqua"
+snelheid = 100
+penGrootte = 2
 
 def snowflake(t, lengthSide, levels): 
     if levels == 0: 
@@ -17,20 +23,19 @@ def snowflake(t, lengthSide, levels):
     snowflake(t, lengthSide, levels-1) 
 
 
-t = turtle.Turtle()
-t.color("light_blue", "light_blue") # ONLY CHANGE THESE (outline, fill)
-  
-t.speed(9999)                    
+turtle.pen(pencolor=kleurUitlijning, fillcolor=kleurVulling, speed=snelheid, pensize=penGrootte)
+                  
 length = 300.0
   
-t.penup()
-t.fd(-150)
-t.pendown()
+turtle.penup()
+turtle.fd(-150)
+turtle.pendown()
 
-t.begin_fill()
+turtle.begin_fill()
 for i in range(3):     
-    snowflake(t, length, 4) 
-    t.right(120) 
+    snowflake(turtle, length, 4) 
+    turtle.right(120) 
 
-t.end_fill()
-turtle.mainloop()   
+turtle.end_fill()
+turtle.hideturtle()
+turtle.exitonclick()

@@ -1,16 +1,20 @@
 import turtle
 
 turtle.title("Snuffeldag Februari 2023 - Ster")
-turtle.bgcolor("#83b011") # ONLY CHANGE THESE
+turtle.bgcolor("#6f9c00")
 
-t = turtle.Turtle()
-t.pen(pencolor="white", fillcolor="purple", pensize=10, speed=5) # ONLY CHANGE THESE
-t.shape("circle") # ONLY CHANGE THESE (square, arrow, circle, triangle)
+kleurUitlijning = "white"
+kleurVulling = "purple"
+snelheid = 10
+penGrootte = 10
 
-t.begin_fill()
+turtle.pen(pencolor=kleurUitlijning, fillcolor=kleurVulling, speed=snelheid, pensize=penGrootte)
+
+turtle.begin_fill()
 for i in range(8):
-    t.forward(200)
-    t.left(135)
+    turtle.forward(200)
+    turtle.left(135)
 
-t.end_fill()
-turtle.mainloop()
+turtle.end_fill()
+turtle.hideturtle()
+turtle.exitonclick()

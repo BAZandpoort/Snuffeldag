@@ -1,16 +1,17 @@
 import turtle
 
+turtle.tracer(0, 0)
 turtle.title("Snuffeldag Februari 2023 - Voorbeeld")
 turtle.bgcolor("black")
 
-t = turtle.Turtle()
-t.pen(speed=30)
-t.shape("circle")
+turtle.pen(speed=1000)
 
-col=("white", "pink", "cyan")
+colors=("white", "pink", "cyan")
 for i in range (200):
-    t.pencolor(col[i%3])
-    t.forward(i*4)
-    t.right(121)
-    
-turtle.mainloop()
+    turtle.pencolor(colors[i%3])
+    turtle.forward(i*4)
+    turtle.right(121)
+
+turtle.hideturtle()
+turtle.update()
+turtle.exitonclick()
