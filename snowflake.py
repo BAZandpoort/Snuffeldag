@@ -1,12 +1,13 @@
 import turtle
 
-turtle.title("Snuffeldag Februari 2023 - Sneeuwvlokje")
-turtle.bgcolor("#6f9c00")
-
+achtergrondKleur = "lightgreen"
 kleurUitlijning = "lightblue"
 kleurVulling = "aqua"
 snelheid = 100
 penGrootte = 2
+
+turtle.title("Snuffeldag Februari 2023 - Sneeuwvlokje")
+turtle.bgcolor(achtergrondKleur)
 
 def snowflake(t, lengthSide, levels): 
     if levels == 0: 

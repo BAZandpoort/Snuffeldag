@@ -1,12 +1,13 @@
 import turtle
 
-turtle.title("Snuffeldag Februari 2023 - Hartje")
-turtle.bgcolor("#6f9c00")
-
+achtergrondKleur = "lightgreen"
 kleurUitlijning = "red"
 kleurVulling = "pink"
 snelheid = 10
 penGrootte = 10
+
+turtle.title("Snuffeldag Februari 2023 - Hartje")
+turtle.bgcolor(achtergrondKleur)
 
 turtle.pen(pencolor=kleurUitlijning, fillcolor=kleurVulling, speed=snelheid, pensize=penGrootte)
 
