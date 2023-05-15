@@ -15,3 +15,5 @@ for i in range (200):
 turtle.hideturtle()
 turtle.update()
 turtle.exitonclick()
+
+# Copyright (c) 2023 Cédric Verlinden & Jasper Verbruggen. All rights reserved.

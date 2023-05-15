@@ -40,3 +40,5 @@ for i in range(3):
 turtle.end_fill()
 turtle.hideturtle()
 turtle.exitonclick()
+
+# Copyright (c) 2023 Cédric Verlinden & Jasper Verbruggen. All rights reserved.
