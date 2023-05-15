@@ -6,7 +6,7 @@ kleurVulling = "aqua"
 snelheid = 100
 penGrootte = 2
 
-turtle.title("Snuffeldag Februari 2023 - Sneeuwvlokje")
+turtle.title("BAZ | Snuffeldag Februari 2023 - Sneeuwvlokje")
 turtle.bgcolor(achtergrondKleur)
 
 def snowflake(t, lengthSide, levels): 
@@ -33,7 +33,7 @@ turtle.fd(-150)
 turtle.pendown()
 
 turtle.begin_fill()
-for i in range(3):     
+for i in range(3):
     snowflake(turtle, length, 4) 
     turtle.right(120) 
 

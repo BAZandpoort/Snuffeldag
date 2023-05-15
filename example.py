@@ -1,7 +1,7 @@
 import turtle
 
 turtle.tracer(0, 0)
-turtle.title("Snuffeldag Februari 2023 - Voorbeeld")
+turtle.title("BAZ | Snuffeldag Februari 2023 - Voorbeeld")
 turtle.bgcolor("black")
 
 turtle.pen(speed=1000)
