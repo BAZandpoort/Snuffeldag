@@ -11,6 +11,10 @@ turtle.bgcolor(achtergrondKleur)
 
 turtle.pen(pencolor=kleurUitlijning, fillcolor=kleurVulling, speed=snelheid, pensize=penGrootte)
 
+wn = turtle.Screen().getcanvas().winfo_toplevel()
+wn.wm_attributes("-fullscreen", 1)
+wn.wm_attributes("-topmost", 1)
+
 turtle.begin_fill()
 
 turtle.left(50)
@@ -19,10 +23,6 @@ turtle.circle(40, 180)
 turtle.left(260)
 turtle.circle(40, 180)
 turtle.forward(100)
-
-wn = turtle.Screen().getcanvas().winfo_toplevel()
-wn.wm_attributes("-fullscreen", 1)
-wn.wm_attributes("-topmost", 1)
 
 turtle.end_fill()
 turtle.hideturtle()
