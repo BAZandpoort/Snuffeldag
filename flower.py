@@ -5,6 +5,7 @@ kleurUitlijning = "pink"
 kleurVulling = "purple"
 snelheid = 10
 penGrootte = 10
+schaal = 1
 
 turtle.title("BAZ | Snuffeldag Januari 2024 - Bloem")
 turtle.bgcolor(achtergrondKleur)
@@ -17,8 +18,8 @@ wn.wm_attributes("-topmost", 1)
 
 turtle.begin_fill()
 for i in range(50):
-    turtle.forward(300)
-    turtle.left(170)
+    turtle.forward(450 * schaal)
+    turtle.left(255 * schaal)
 
 turtle.end_fill()
 turtle.hideturtle()

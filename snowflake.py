@@ -5,11 +5,14 @@ kleurUitlijning = "lightblue"
 kleurVulling = "aqua"
 snelheid = 100
 penGrootte = 2
+schaal = 1.1
 
+turtle.tracer(0, 0)
 turtle.title("BAZ | Snuffeldag Januari 2024 - Sneeuwvlokje")
 turtle.bgcolor(achtergrondKleur)
 
 def snowflake(t, lengthSide, levels): 
+    lengthSide *= schaal
     if levels == 0: 
         t.forward(lengthSide) 
         return

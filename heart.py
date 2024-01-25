@@ -5,6 +5,7 @@ kleurUitlijning = "red"
 kleurVulling = "pink"
 snelheid = 10
 penGrootte = 10
+schaal = 3
 
 turtle.title("BAZ | Snuffeldag Januari 2024 - Hartje")
 turtle.bgcolor(achtergrondKleur)
@@ -18,11 +19,11 @@ wn.wm_attributes("-topmost", 1)
 turtle.begin_fill()
 
 turtle.left(50)
-turtle.forward(100)
-turtle.circle(40, 180)
+turtle.forward(100 * schaal)
+turtle.circle(40 * schaal, 180)
 turtle.left(260)
-turtle.circle(40, 180)
-turtle.forward(100)
+turtle.circle(40 * schaal, 180)
+turtle.forward(100 * schaal)
 
 turtle.end_fill()
 turtle.hideturtle()
