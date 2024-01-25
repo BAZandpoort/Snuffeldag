@@ -6,7 +6,7 @@ kleurVulling = "pink"
 snelheid = 10
 penGrootte = 10
 
-turtle.title("BAZ | Snuffeldag Februari 2023 - Hartje")
+turtle.title("BAZ | Snuffeldag Januari 2024 - Hartje")
 turtle.bgcolor(achtergrondKleur)
 
 turtle.pen(pencolor=kleurUitlijning, fillcolor=kleurVulling, speed=snelheid, pensize=penGrootte)
