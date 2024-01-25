@@ -7,7 +7,6 @@ snelheid = 100
 penGrootte = 2
 schaal = 1.1
 
-turtle.tracer(0, 0)
 turtle.title("BAZ | Snuffeldag Januari 2024 - Sneeuwvlokje")
 turtle.bgcolor(achtergrondKleur)
 
