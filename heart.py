@@ -20,6 +20,10 @@ turtle.left(260)
 turtle.circle(40, 180)
 turtle.forward(100)
 
+wn = turtle.Screen().getcanvas().winfo_toplevel()
+wn.wm_attributes("-fullscreen", 1)
+wn.wm_attributes("-topmost", 1)
+
 turtle.end_fill()
 turtle.hideturtle()
 turtle.exitonclick()

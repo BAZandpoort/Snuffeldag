@@ -37,6 +37,10 @@ for i in range(3):
     snowflake(turtle, length, 4) 
     turtle.right(120) 
 
+wn = turtle.Screen().getcanvas().winfo_toplevel()
+wn.wm_attributes("-fullscreen", 1)
+wn.wm_attributes("-topmost", 1)
+
 turtle.end_fill()
 turtle.hideturtle()
 turtle.exitonclick()
