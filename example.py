@@ -14,6 +14,7 @@ for i in range (200):
 
 turtle.hideturtle()
 turtle.update()
+turtle.setup(1.0, 1.0)
 turtle.exitonclick()
 
 # Copyright (c) 2023 Cédric Verlinden & Jasper Verbruggen. All rights reserved.
