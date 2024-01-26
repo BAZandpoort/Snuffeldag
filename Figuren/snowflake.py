@@ -5,11 +5,13 @@ kleurUitlijning = "lightblue"
 kleurVulling = "aqua"
 snelheid = 100
 penGrootte = 2
+schaal = 1.1
 
-turtle.title("BAZ | Snuffeldag Februari 2023 - Sneeuwvlokje")
+turtle.title("BAZ | Snuffeldag Januari 2024 - Sneeuwvlokje")
 turtle.bgcolor(achtergrondKleur)
 
 def snowflake(t, lengthSide, levels): 
+    lengthSide *= schaal
     if levels == 0: 
         t.forward(lengthSide) 
         return
@@ -25,6 +27,10 @@ def snowflake(t, lengthSide, levels):
 
 
 turtle.pen(pencolor=kleurUitlijning, fillcolor=kleurVulling, speed=snelheid, pensize=penGrootte)
+
+wn = turtle.Screen().getcanvas().winfo_toplevel()
+wn.wm_attributes("-fullscreen", 1)
+wn.wm_attributes("-topmost", 1)
                   
 length = 300.0
   
