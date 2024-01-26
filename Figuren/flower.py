@@ -19,7 +19,7 @@ wn.wm_attributes("-topmost", 1)
 turtle.begin_fill()
 for i in range(50):
     turtle.forward(450 * schaal)
-    turtle.left(255 * schaal)
+    turtle.left(255)
 
 turtle.end_fill()
 turtle.hideturtle()
